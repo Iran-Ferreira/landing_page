@@ -1,0 +1,25 @@
+.main-secton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+
+    span{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 72px;
+        font-weight: 900;
+    }
+
+}
+
+@media (min-width: 1080px){
+    .main-secton{
+        flex-direction: row;
+    }
+}
+
