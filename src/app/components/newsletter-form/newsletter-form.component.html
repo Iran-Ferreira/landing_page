@@ -1,0 +1,22 @@
+<section class="form-section">
+    <div class="text">
+        <h3>
+            Fique por dentro das tendências
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis fuga est ex, praesentium illum itaque officiis magnam consequatur cupiditate voluptatem optio consequuntur libero labore nobis alias atque voluptatum eum.</p>
+    </div>
+    <form [formGroup]="newsletterForm">
+        <label for="email">Name</label>
+        <input type="text" id="name" formControlName="name"/>
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email">
+        <btn-primary 
+            button-text="Se inscreva" 
+            variant="secondary"
+            (submit)="submit()"
+            [disabled]="!newsletterForm.valid"
+        >
+        </btn-primary >
+    </form>
+
+</section>
