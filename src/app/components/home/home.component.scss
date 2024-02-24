@@ -2,6 +2,7 @@
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 84px;
 }
@@ -58,17 +59,34 @@ main{
             font-style: normal;
         }
     }
-
 }
 
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media (min-width: 1080px){
+   .main-secton{
+       flex-direction: row;
+   }
+
+   .benefit-section {
+       flex-direction: row;
+   }
+}
+
+/* Estilos para telas médias 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+     Estilos para telas entre 768px e 1023px de largura 
+     Estilo para ajeitar depois
     .main-secton{
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .benefit-section {
-        flex-direction: row;
+        flex-direction: column;
     }
-}
+} */
 
