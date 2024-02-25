@@ -6,15 +6,16 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis fuga est ex, praesentium illum itaque officiis magnam consequatur cupiditate voluptatem optio consequuntur libero labore nobis alias atque voluptatum eum.</p>
     </div>
     <form [formGroup]="newsletterForm">
-        <label for="email">Name</label>
+        <label for="name">Name</label>
         <input type="text" id="name" formControlName="name"/>
         <label for="email">Email</label>
         <input type="email" id="email" formControlName="email">
         <btn-primary 
             button-text="Se inscreva" 
             variant="secondary"
-            (submit)="submit()"
+            (submit)="Onsubmit()"
             [disabled]="!newsletterForm.valid"
+            [loading]="loading()"
         >
         </btn-primary >
     </form>
